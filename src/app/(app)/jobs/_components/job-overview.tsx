@@ -7,12 +7,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
 import { JobPostWithCompany } from "@/lib/data/job.types";
 import { jobFilterQueryParams, jobFilterSchema } from "@/lib/params";
 import { JobType } from "@prisma/client";
 import Link from "next/link";
+import removeMd from "remove-markdown";
 import { z } from "zod";
-import { Skeleton } from "../../../../components/ui/skeleton";
 
 type JobListingProps = {
   job: JobPostWithCompany;
@@ -70,7 +71,10 @@ function JobOverview({ job, isFollowing, filter }: JobListingProps) {
           <p
             className={"text-sm font-normal leading-none text-muted-foreground"}
           >
-            {job.description?.slice(0, 125) + "..."}
+            {removeMd(job.description?.slice(0, 125) + "...", {
+              stripListLeaders: true,
+              gfm: true,
+            })}
           </p>
         </CardContent>
       </Card>
