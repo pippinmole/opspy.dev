@@ -1666,12 +1666,10 @@
     urlpattern-polyfill "^10.0.0"
     zustand "^4.5.6"
 
-"@knocklabs/node@^0.6.8":
-  version "0.6.19"
-  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-0.6.19.tgz#ad935d3ef6963808c6f20e987ad0adbb9c16de65"
-  integrity sha512-hmu0g7BJiHz20ApkRnesM0SeOugvYhwHilwDMDk1TmpdQ2Z7jmWrYRsmR7L78EZ5zvEBR6bExICqmW9bz4oXQw==
-  dependencies:
-    jose "^5.2.0"
+"@knocklabs/node@^1.0.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@knocklabs/node/-/node-1.1.0.tgz#ee3caa29553b28f813584b41bec6a2b37f123097"
+  integrity sha512-5K4AorsmxD5l87edqkHR7ON7T1kbk4I6xGvHGWtFRjSYAZgv6dgaYGXCuz4mayW152mHcPuPJu0Qgx0A9aboQA==
 
 "@knocklabs/react-core@^0.6.10":
   version "0.6.10"
@@ -7284,11 +7282,6 @@ jiti@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-2.4.2.tgz#d19b7732ebb6116b06e2038da74a55366faef560"
   integrity sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A==
-
-jose@^5.2.0:
-  version "5.10.0"
-  resolved "https://registry.yarnpkg.com/jose/-/jose-5.10.0.tgz#c37346a099d6467c401351a9a0c2161e0f52c4be"
-  integrity sha512-s+3Al/p9g32Iq+oqXxkW//7jk2Vig6FF1CFqzVXoTUXt2qz89YWbL+OwS17NFYEvxC35n0FKeGO2LGYSxeM2Gg==
 
 jose@^6.0.6:
   version "6.0.11"
